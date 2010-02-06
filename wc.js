@@ -5,7 +5,7 @@ function show(msg) {
 function countWords() {
     var doc = jetpack.tabs.focused.contentDocument;
     doc = $(doc);
-    var pivots = doc.find("body").text().split(/[\s,]/);
+    var pivots = doc.find("body").text().split(/[\s\,\.]/);
     var count = 0;
     for (var i = 0; i < pivots.length; i++) {
         var word = pivots[i];
